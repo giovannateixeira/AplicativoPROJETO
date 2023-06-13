@@ -37,7 +37,7 @@ const styles = StyleSheet.create(
             // prop //
             elevation: 10,
             shadowColor: "black",
-            color: "#ffff",
+            color: "black",
             borderRadius: 50,
         },
         

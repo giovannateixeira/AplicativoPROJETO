@@ -1,3 +1,4 @@
+import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -18,7 +19,6 @@ export default function App() {
             <Stack.Navigator
                 screenOptions={{
                     headerStyle: { backgroundColor: '#1c1c23' }, 
-                    headerLeft: 20,
                     headerTintColor: '#edebe8', 
                     headerTitleAlign: 'center' 
                 }}
@@ -36,29 +36,28 @@ export default function App() {
 function Tabs() {
     return(
         <Tab.Navigator
-            screenOptions={({route}) => ({
-                tabBarIcon: ({color, size}) => {
+            screenOptions={({ route }) => ({
+                tabBarIcon: ({ color, size }) => {
                     let iconName;
-                    if(route.name == "Minhas Anotações"){
+                    if(route.name === "Minhas Anotações"){
                         iconName = "queue";
-                    }else if(route.name == "Conta"){
+                    } else if(route.name === "Conta"){
                         iconName = "logout";
                     }
-                    return <MaterialIcons name={iconName} size={size} color={color}/>
+                    return <MaterialIcons name={iconName} size={size} color={color} />
                 },
                 tabBarActiveTintColor: "#ffff", 
                 tabBarInactiveTintColor: "#E7485C", 
-                tabBarStyle: {backgroundColor: "#1c1c23"}, 
+                tabBarStyle: { backgroundColor: "#1c1c23" }, 
                 tabBarLabelPosition: 'beside-icon',
-                headerShow: true,
+                headerShown: true,
                 headerTintColor: "#ffff", 
                 headerTitleAlign: "center", 
-                headerStyle: {backgroundColor: '#1c1c23'} 
+                headerStyle: { backgroundColor: '#1c1c23' } 
             })}
         >
-            <Tab.Screen name="Minhas Anotações" component={Cadastro}/>
-            <Tab.Screen    name= "MInha Conta" component={Logout}/>
+            <Tab.Screen name="Minhas Anotações" component={Cadastro} />
+            <Tab.Screen name="Conta" component={Logout} />
         </Tab.Navigator>
     );
 }
-

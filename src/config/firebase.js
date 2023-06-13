@@ -5,12 +5,12 @@ import { deleteApp,initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCgj1gQsKR9nAdlWYTr3OVYOzOJ6cv8f1s",
-  authDomain: "planner-2023-6288f.firebaseapp.com",
-  projectId: "planner-2023-6288f",
-  storageBucket: "planner-2023-6288f.appspot.com",
-  messagingSenderId: "646963552044",
-  appId: "1:646963552044:web:ab62f9e2c4f5735e6b1689"
+  apiKey: "AIzaSyBbfnHwXd-L0BH6wiH7IUe8NppOqRRPPdQ",
+  authDomain: "aplicativoprojeto-43ca8.firebaseapp.com",
+  projectId: "aplicativoprojeto-43ca8",
+  storageBucket: "aplicativoprojeto-43ca8.appspot.com",
+  messagingSenderId: "746014857875",
+  appId: "1:746014857875:web:d1dd70f70c297714b7cb66"
 };
 
 // Initialize Firebase
