@@ -13,7 +13,7 @@ export default function CreateAnotacao({navigation}){
 
     const validade = () => {
         if(text == "" || descricao == ""){
-            setErrorCreateAnotacao("Preencha todos os campos!")
+            setErrorCreateAnotacao("Ops... Preencha todos os campos!")
         }else{
             setErrorCreateAnotacao(null)
             createAnotacao()
@@ -39,7 +39,7 @@ export default function CreateAnotacao({navigation}){
             <TextInput
                 style={styles.formInput}
                 placeholder='Descrição'
-                placeholderTextColor={"rgba(255,255,255,0.4)"}
+                placeholderTextColor={"black"}
                 value={descricao}
                 onChangeText={setDescricao}
             />
@@ -47,7 +47,7 @@ export default function CreateAnotacao({navigation}){
             <TextInput
                 style={styles.formInput}
                 placeholder='Texto'
-                placeholderTextColor={"rgba(255,255,255,0.4)"}
+                placeholderTextColor={"black"}
                 value={text}
                 onChangeText={setText}
             />

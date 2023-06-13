@@ -18,14 +18,15 @@ export default function App() {
             <Stack.Navigator
                 screenOptions={{
                     headerStyle: { backgroundColor: '#1c1c23' }, 
+                    headerLeft: 20,
                     headerTintColor: '#edebe8', 
                     headerTitleAlign: 'center' 
                 }}
             >
                 <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
                 <Stack.Screen name="CreateUser" component={CreateUser} options={{ title: 'Cadastro de Usuário' }} />
-                <Stack.Screen name="CreateAnotacao" component={CreateAnotacao} options={{ title: 'Cadastro de ferramenta' }} />
-                <Stack.Screen name="EditAnotacao" component={EditAnotacao} options={{ title: 'Atualização de ferramenta' }} />
+                <Stack.Screen name="CreateAnotacao" component={CreateAnotacao} options={{ title: 'Minhas Anotações' }} />
+                <Stack.Screen name="EditAnotacao" component={EditAnotacao} options={{ title: 'Editar Minhas Anotações' }} />
                 <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
@@ -38,24 +39,25 @@ function Tabs() {
             screenOptions={({route}) => ({
                 tabBarIcon: ({color, size}) => {
                     let iconName;
-                    if(route.name == "Anotações"){
+                    if(route.name == "Minhas Anotações"){
                         iconName = "queue";
-                    }else if(route.name == "Sair"){
+                    }else if(route.name == "Conta"){
                         iconName = "logout";
                     }
                     return <MaterialIcons name={iconName} size={size} color={color}/>
                 },
-                tabBarActiveTintColor: "#edebe8", 
-                tabBarInactiveTintColor: "#db9f04", 
+                tabBarActiveTintColor: "#ffff", 
+                tabBarInactiveTintColor: "#E7485C", 
                 tabBarStyle: {backgroundColor: "#1c1c23"}, 
+                tabBarLabelPosition: 'beside-icon',
                 headerShow: true,
-                headerTintColor: "#edebe8", 
+                headerTintColor: "#ffff", 
                 headerTitleAlign: "center", 
                 headerStyle: {backgroundColor: '#1c1c23'} 
             })}
         >
-            <Tab.Screen name="Anotações" component={Cadastro}/>
-            <Tab.Screen name="Sair" component={Logout}/>
+            <Tab.Screen name="Minhas Anotações" component={Cadastro}/>
+            <Tab.Screen    name= "MInha Conta" component={Logout}/>
         </Tab.Navigator>
     );
 }

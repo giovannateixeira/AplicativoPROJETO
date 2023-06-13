@@ -3,48 +3,54 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create(
     {
         login: {
-            padding: 30,
-            flex: 1,
+            backgroundColor: "#FFFF",
+            flex: 2,
+            padding: 50,
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#1c1c23",
             
         },
         
         alert: {
+            fontWeight: "bold",
+            width: "110%",
             fontSize: 18,
             textAlign: "center",
-            color: "#edebe8",
-            marginBottom: 20,
-            borderBottomWidth: 1.7,
-            borderBottomColor: "#edebe8",
+            color: "#FFFF",
+            marginTop: 10,
+            marginBottom: 30,
             backgroundColor: "red",
             padding: 5,
-            borderRadius: 5,
+            borderRadius: 50,
+            elevation: 10,
+            shadowColor: "red",
         },
 
         formInput: {
-            fontSize: 18,
-            backgroundColor: "#DDD",
+            fontSize: 20,
+            backgroundColor: "#BBBBB",
             padding: 10,
-            marginBottom: 20,
-            width: "100%",
+            marginBottom: 30,
+            width: "110%",
             height: 56,
-            backgroundColor: 'rgba(255, 255, 255, 0.2)',
-            borderBottomWidth: 3,
-            borderBottomColor: "#edebe8",
-            color: "#edebe8",
-            borderRadius: 5,
+            backgroundColor: '#FFFF',
+            // prop //
+            elevation: 10,
+            shadowColor: "black",
+            color: "#ffff",
+            borderRadius: 50,
         },
+        
         
         formButton: {
 
-            backgroundColor: "#db9f04",
+            backgroundColor: "#E7485C",
             padding: 10,
-            borderRadius: 30,
-            marginTop: 100,
-            width: "100%",
+            borderRadius: 50,
+            marginBottom: 20,
+            width: "110%",
             height: 56,
+            marginTop:20,
         },
 
         textButton: {

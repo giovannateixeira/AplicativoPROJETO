@@ -2,53 +2,58 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        padding: 30,
+        backgroundColor: "#FFFF",
+        flex: 2,
+        padding: 50,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#db9f04",
+        LinearGradient: "black"
     },
 
     alert: {
-        fontSize: 18,
-        textAlign: "center",
-        color: "#edebe8",
-        marginTop: 20,
-        marginBottom: 20,
-        borderBottomWidth: 1.7,
-        borderBottomColor: "#edebe8",
-        backgroundColor: "red",
-        padding: 5,
-        borderRadius: 5,
+        fontWeight: "bold",
+            width: "110%",
+            fontSize: 18,
+            textAlign: "center",
+            color: "#FFFF",
+            marginTop: 10,
+            marginBottom: 30,
+            backgroundColor: "red",
+            padding: 5,
+            borderRadius: 50,
+            elevation: 10,
+            shadowColor: "red",
     },
 
     formInput: {
-        fontSize: 18,
+        fontSize: 20,
+        backgroundColor: "red",
         padding: 10,
-        marginBottom: 20,
-        width: "100%",
+        marginBottom: 30,
+        width: "110%",
         height: 56,
-        backgroundColor: 'rgba(0, 0, 0, 0.4)',
-        borderBottomWidth: 3,
-        color: "#edebe8",
-        borderBottomColor: "#edebe8",
-        borderRadius: 5,
+        backgroundColor: '#FFFF',
+        // prop //
+        elevation: 10,
+        shadowColor: "black",
+        color: "black",
+        borderRadius: 50,
     },
 
     formBtn: {
-        backgroundColor: "#1c1c23",
+        backgroundColor: "#E7485C",
         padding: 10,
-        borderRadius: 30,
+        borderRadius: 50,
         marginBottom: 20,
-        width: "100%",
+        width: "110%",
         height: 56,
-        marginTop: 30,
+        marginTop:20,
     },
 
     textBtn: {
-        color: "#edebe8",
+        color: "#FFFF",
         fontSize: 24,
-        textAlign: "center"
+        textAlign: "center",
     },
 });
 

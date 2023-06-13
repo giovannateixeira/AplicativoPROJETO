@@ -2,60 +2,69 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
+        padding: 15,
         flex: 1,
-        backgroundColor: "#db9f04",
+        backgroundColor: "#FFFF",
     },
 
-    home: {
-        backgroundColor: "#db9f04",
-        alignItems: 'center',
-    },
 
     anotacao: {
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        backgroundColor: '#FA8C75',
         padding: 15,
         marginBottom: 10,
         borderRadius: 5,
-        flexDirection: 'row',
+        flexDirection: 'row-reverse',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: 5,
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: "#edebe8"
+        justifyContent: 'flex-end',
+        padding: 15,
+        borderRadius: 5,
+        
+        //uso da prop
+        elevation: 10,
+        shadowColor: "black",
+        color: "blue",
+       
     },
 
     information: {
-        fontSize: 16,
-        color: "#edebe8",
-        marginBottom: 5,
+        fontSize: 20,
+        color: "#FFFF",
+        marginBottom: 10,
     },
 
     descricao: {
-        borderColor: "#edebe8",
-        fontSize: 24,
+        borderColor: "#FFFF",
+        fontSize: 29,
         fontWeight: 'bold',
-        color: "#1c1c23",
+        color: "black",
         marginBottom: 10,
-        padding: 5,
-        borderRadius: 10,
+        padding: 2,
     },
 
     btnExcluir: {
         alignItems: 'center',
-        marginBottom: 20,
+        marginBottom: 10,
+        marginLeft: 10,
+       left: "750%",
+       
+        color: "#FFFF"
     },
 
-    btn: {
-        backgroundColor: "#1c1c23",
-        borderRadius: 5,
+    btnEdit:{
+        alignItems: 'center',
+        marginLeft: 10,
+        marginBottom: 0,
+        right: 15,
+
+        top: -40,
+        color: "#FFFF"
     },
+    
 
     btnCreate: {
-        backgroundColor: 'green',
-        width: 56,
-        height: 56,
+        backgroundColor: '#389EE9',
+        padding: 10,
+        width: "100%",
         borderRadius: 50,
         position: 'absolute',
         bottom: 20,

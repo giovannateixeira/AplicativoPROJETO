@@ -3,27 +3,28 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create(
     {
         account: {
-            backgroundColor: "#db9f04",
-            flex: 1,
-            padding: 30,
+            backgroundColor: "#FFFF",
+            flex: 2,
+            padding: 50,
             alignItems: "center",
             justifyContent: "center",
+            LinearGradient: "black"
         },
 
         btnSair: {
-            backgroundColor: 'red',
-            width: "100%",
+            backgroundColor: "#E7485C",
+            padding: 10,
+            borderRadius: 50,
+            marginBottom: 20,
+            width: "110%",
             height: 56,
-            borderRadius: 5,
-            position: 'absolute',
-            justifyContent: 'center',
-            alignContent: 'center',
+            marginTop: 550,
         },
     
         btnTextSair: {
+            color: "#FFFF",
             fontSize: 24,
-            textAlign: 'center',
-            color: '#edebe8'
+            textAlign: "center",
         }
     }
 );

@@ -15,7 +15,7 @@ export default function EditAnotacao({navigation, route}){
     
     const validade = () => {
         if(text == "" || descricao == ""){
-            setErrorCreateAnotacao("Preencha todos os campos!")
+            setErrorCreateAnotacao("Ops... Preencha todos os campos!")
         }else{
             setErrorCreateAnotacao(null)
             editAnotacao()
@@ -44,7 +44,7 @@ export default function EditAnotacao({navigation, route}){
             <TextInput
                 style={styles.formInput}
                 placeholder='Descrição'
-                placeholderTextColor={"rgba(255,255,255,0.4)"}
+                placeholderTextColor={"black"}
                 value={descricao}
                 onChangeText={setDescricao}
             />
@@ -52,7 +52,7 @@ export default function EditAnotacao({navigation, route}){
             <TextInput
                 style={styles.formInput}
                 placeholder='Texto'
-                placeholderTextColor={"rgba(255,255,255,0.4)"}
+                placeholderTextColor={"black"}
                 value={text}
                 onChangeText={setText}
             />
@@ -61,7 +61,7 @@ export default function EditAnotacao({navigation, route}){
                 style={styles.formBtn}
                 onPress={validade} 
             >
-                <Text style={styles.textBtn}>Confirmar</Text>
+                <Text style={styles.textBtn}>Atualizar</Text>
             </TouchableOpacity>
 
         </View>

@@ -41,7 +41,7 @@ export default function Cadastro({ navigation }) {
                             <TouchableOpacity 
                                 onPress={()=> deleteAnotacao(item.id)}
                             >
-                                <MaterialIcons style={styles.btnExcluir} name= "delete" size={30} color="#c40000"/>
+                                <MaterialIcons style={styles.btnExcluir} name= "delete" size={30} color="#FFFF"/>
                             </TouchableOpacity>
                             
                             <TouchableOpacity 
@@ -52,7 +52,8 @@ export default function Cadastro({ navigation }) {
                                     } 
                                 )}    
                             >
-                                <MaterialIcons name= "edit" size={30} color="blue"/>
+                                <MaterialIcons style={styles.btnEdit} name= "edit" size={30} color="#ffff"/>
+                                
                             </TouchableOpacity>
                         </View>
                     </View>  

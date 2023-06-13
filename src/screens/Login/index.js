@@ -11,7 +11,7 @@ export default function Login({ navigation }) {
 
     const validate = () => {
         if (email == "" || password == "") {
-            setErroLogin("Informe e-mail e senha!")
+            setErroLogin("Ops.. Informe seu e-mail e senha")
         } else {
             setErroLogin(null)
             loginFirebase();
@@ -46,7 +46,8 @@ export default function Login({ navigation }) {
     return (
         <View style={styles.login}>
 
-            <Text style={styles.label}>Seja bem vindo!</Text>
+            <Text style={styles.titulo}>Olá! Bem vinda(o), a Sua Agenda!</Text>
+            <Text style={styles.subtitulo}>Faça o login para continuar</Text>
 
             {errorLogin != null &&
                 <Text style={styles.alert}>{errorLogin}</Text>
@@ -56,7 +57,7 @@ export default function Login({ navigation }) {
             <TextInput
                 style={styles.formInput}
                 placeholder='E-mail'
-                placeholderTextColor={"rgba(255,255,255,0.4)"}
+                placeholderTextColor={"black"}
                 value={email}
                 onChangeText={setEmail}
             />
@@ -65,7 +66,7 @@ export default function Login({ navigation }) {
                 style={styles.formInput}
                 secureTextEntry={true}
                 placeholder='Senha'
-                placeholderTextColor={"rgba(255,255,255,0.4)"}
+                placeholderTextColor={"black"}
                 value={password}
                 onChangeText={setPassword}
             />
@@ -74,13 +75,16 @@ export default function Login({ navigation }) {
                 style={styles.formButton}
                 onPress={validate}
             >
-                <Text style={styles.textButton}>Acessar</Text>
+                <Text style={styles.textButton}>Login</Text>
             </TouchableOpacity>
+
+            <Text style={styles.subtituloCreat}>Ainda não tem conta?</Text>
 
             <TouchableOpacity
                 style={styles.btnCreate}
+                
                 onPress={() => navigation.navigate('CreateUser')}>
-                <Text style={styles.btnCreateText}>CRIAR CONTA</Text>
+                <Text style={styles.btnCreateText}>CRIE AGORA</Text>
             </TouchableOpacity>
         </View>
     );

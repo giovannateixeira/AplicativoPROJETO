@@ -20,7 +20,7 @@ export default function Logout({navigation}) {
                 style={styles.btnSair}
                 onPress={signOutFirebase}
             >
-                <Text style={styles.btnTextSair}>Sair do app!</Text>
+                <Text style={styles.btnTextSair}>Sair</Text>
             </TouchableOpacity>
         </View>
     );

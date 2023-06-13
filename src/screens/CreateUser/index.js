@@ -13,7 +13,7 @@ export default function CreateUser({navigation}) {
 
     const validate = () => {
         if (nome == "" || telefone == "" || email == "" || password == "") {
-            setErrorCreateUser("Preencha todos os campos!");
+            setErrorCreateUser("Ops..Preencha todos os campos");
         } else {
             setErrorCreateUser(null)
             createUser();
@@ -47,7 +47,7 @@ export default function CreateUser({navigation}) {
             <TextInput
                 style={styles.formInput}
                 placeholder='Nome'
-                placeholderTextColor={"rgba(255,255,255,0.3)"}
+                placeholderTextColor={"black"}
                 value={nome}
                 onChangeText={setNome}
             />
@@ -55,15 +55,15 @@ export default function CreateUser({navigation}) {
             <TextInput
                 style={styles.formInput}
                 placeholder='Telefone'
-                placeholderTextColor={"rgba(255,255,255,0.3)"}
+                placeholderTextColor={"black"}
                 value={telefone}
                 onChangeText={setTelefone}
             />
             
-            <TextInput name="mail" size={24} color="black"
+            <TextInput name="mail" size={20} color="black"
                 style={styles.formInput}
                 placeholder='E-mail'
-                placeholderTextColor={"rgba(255,255,255,0.3)"}
+                placeholderTextColor={"black"}
                 value={email}
                 onChangeText={setEmail}
             />
@@ -72,7 +72,7 @@ export default function CreateUser({navigation}) {
                 style={styles.formInput}
                 secureTextEntry={true}
                 placeholder='Senha'
-                placeholderTextColor={"rgba(255,255,255,0.3)"}
+                placeholderTextColor={"black"}
                 value={password}
                 onChangeText={setPassword}
             />

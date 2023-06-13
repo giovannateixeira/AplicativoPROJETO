@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 
+
 const styles = StyleSheet.create(
     {
 
@@ -16,69 +17,112 @@ const styles = StyleSheet.create(
         },
 
         login: {
-            backgroundColor: "#db9f04",
-            flex: 1,
-            padding: 30,
+            backgroundColor: "#FFFF",
+            flex: 2,
+            padding: 50,
             alignItems: "center",
             justifyContent: "center",
+            LinearGradient: "black"
+           
         },
 
         alert: {
+            fontWeight: "bold",
+            width: "110%",
             fontSize: 18,
             textAlign: "center",
-            color: "#edebe8",
-            marginBottom: 20,
-            borderBottomWidth: 1.7,
-            borderBottomColor: "#edebe8",
+            color: "#FFFF",
+            marginTop: 10,
+            marginBottom: 30,
             backgroundColor: "red",
             padding: 5,
-            borderRadius: 5,
+            borderRadius: 50,
+            elevation: 10,
+            shadowColor: "red",
         },
 
         label: {
             fontSize: 24,
             fontWeight: "bold",
-            color: "#edebe8",
-            marginBottom: 20,
+            color: "black",
+            marginTop: 50,
         },
 
+        titulo:{
+            marginTop: 110,
+            fontSize: 30,
+            color: "black",
+            fontWeight: "bold",
+            marginBottom: 10,
+        },
+
+        subtitulo:{
+            fontSize: 17,
+            color: "black",
+            fontWeight: "bold",
+            marginBottom: 30,    
+            textAlign: 'center'    
+        },
+
+        subtituloCreat:{
+            fontSize: 17,
+            color: "black",
+            fontWeight: "bold",
+            marginTop: 30, 
+            
+        }
+        ,
+
         formInput: {
-            fontSize: 18,
+            fontSize: 20,
+            backgroundColor: "red",
             padding: 10,
-            marginBottom: 20,
-            width: "100%",
+            marginBottom: 30,
+            width: "110%",
             height: 56,
-            backgroundColor: 'rgba(0, 0, 0, 0.4)',
-            borderBottomWidth: 3,
-            color: "#edebe8",
-            borderBottomColor: "#edebe8",
-            borderRadius: 5,
+            backgroundColor: '#FFFF',
+            // prop //
+            elevation: 10,
+            shadowColor: "black",
+            color: "black",
+            borderRadius: 50,
         },
 
         formButton: {
-            backgroundColor: "#1c1c23",
+            backgroundColor: "#E7485C",
             padding: 10,
-            borderRadius: 30,
+            borderRadius: 50,
             marginBottom: 20,
-            width: "100%",
+            width: "110%",
             height: 56,
             marginTop:20,
         },
 
         textButton: {
-            color: "#edebe8",
+            color: "#FFFF",
             fontSize: 24,
             textAlign: "center",
         },
 
         btnCreate: {
-            marginTop: 20,
+            backgroundColor: "#F78D74",
+            padding: 10,
+            borderRadius: 30,
+            marginBottom: 20,
+            width: "110%",
+            height: 56,
+            marginTop:20, 
+            elevation: 10,
+            shadowColor: "black",
+            color: "#black",
         },
 
         btnCreateText: {
-            color: "#000",
-            fontSize: 16,
+           
+            color: "#FFFF",
+            fontSize: 20,
             fontWeight: "bold",
+            textAlign: 'center'
         }
     }
 );
